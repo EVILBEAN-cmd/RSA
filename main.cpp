@@ -263,7 +263,7 @@ void primeFactors(vector<unsigned long long>& factors, long long n)
     }
     return;
 }
-
+// Test xD
 
 
 
@@ -277,7 +277,7 @@ unsigned long long rsaFactoring(long long c, unsigned long long e, unsigned long
     unsigned long long phi = 1;
 
     primeFactors(factors, n);
-
+    // C++ 11 part
     for (auto &i : factors)
     {
         phi *= i-1;
