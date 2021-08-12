@@ -8,7 +8,8 @@ using namespace std;
 bool isPrime(long long n)
 {
     // Corner cases and even numbers
-    if(n == 2){
+    if(n == 2)
+    {
         return true;
     }
     else if (n < 2 || n%2 == 0)
@@ -319,7 +320,8 @@ int main()
             cout << "Private key: " << d << " " << n << endl;
         }
         // Quit program
-        else if(strcmp(&state, "q") == 0){
+        else if(strcmp(&state, "q") == 0)
+        {
             break;
 
         }
