@@ -264,7 +264,7 @@ unsigned long long rsaFactoring(unsigned long long e, unsigned long long n)
     primeFactors(factors, n);
     
     // C++ 11 part
-    for (auto &i : factors)
+    for(auto &i : factors)
     {
         phi *= i-1;
     }
