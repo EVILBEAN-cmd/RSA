@@ -62,6 +62,6 @@ AUG 2021
 
 
 TODOS:
-- [ ] Change inputs in order to only get numbers (maybe new function)
+- [ ] Makefile
 - [ ] Maybe add text for encryption/decryption not just numbers
 - [ ] split up code in different files
