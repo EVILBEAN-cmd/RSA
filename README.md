@@ -12,7 +12,7 @@ I hope you enjoy this code and I'd love some feedback.
 
 # Math behind the code
 
-Creating Key pairs
+#### Creating Key pairs
 1. Choose two prime number p and q
 2. n = p * q
 3. phi(n) = (p-1) * (q-1) (https://en.wikipedia.org/wiki/Euler%27s_totient_function, 12.08.2021)
@@ -24,7 +24,7 @@ public key = (e, n)
 private key = (d, n)
 
 
-Cipher
+#### Cipher
 
 c - ciphered number
 m - deciphered number
@@ -34,7 +34,7 @@ n - second part of public key
 c = m^e mod n
 
 
-Decipher
+#### Decipher
 
 c - ciphered number
 m - deciphered number
@@ -44,7 +44,7 @@ n - second part of private key
 m = c^d mod n
 
 
-Get private key with public key
+#### Get private key with public key
 
 e - first part of public key
 d - first part of private key
