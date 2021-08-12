@@ -17,3 +17,4 @@ TODOS:
 -------------------------------------------------
 - [ ] Change inputs in order to only get numbers (maybe new function)
 - [ ] Maybe add text for encryption/decryption not just numbers
+- [ ] split up code in different files
