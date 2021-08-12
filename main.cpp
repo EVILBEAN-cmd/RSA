@@ -8,12 +8,18 @@ using namespace std;
 bool isPrime(long long n)
 {
     // Corner cases and even numbers
-    if (n < 2 || n%2 == 0){
+    if(n == 2){
+        return true;
+    }
+    else if (n < 2 || n%2 == 0)
+    {
         return false;
     }
     // Check from 2 to n-1
-    for (int i = 3; i < sqrt(n); i += 2){
-        if (n % i == 0){
+    for (int i = 3; i < sqrt(n); i += 2)
+    {
+        if (n % i == 0)
+        {
             return false;
         }
     }
@@ -82,14 +88,16 @@ result createKeys()
         cout << "Choose your first prime number: \n ";
         cin >> p;
         usleep(100);
-        while(cin.fail()) {
+        while(cin.fail())
+        {
             cout << "Error. Not a number. \n ";
             cin.clear();
             cin.ignore(256,'\n');
             cin >> p;
         }
         usleep(100);
-        while(!isPrime(p)) {
+        while(!isPrime(p))
+        {
             cout << "Error. Not prime. \n ";
             cin.clear();
             cin.ignore(256,'\n');
@@ -102,7 +110,8 @@ result createKeys()
         cout << "Choose your second prime number: \n ";
         cin >> q;
         usleep(100);
-        while(cin.fail()) {
+        while(cin.fail())
+        {
             cout << "Error. Not a number. \n ";
             cin.clear();
             cin.ignore(256,'\n');
@@ -121,9 +130,11 @@ result createKeys()
         // Calucaltions of n, phi(n) and checking if phi > e
         n = p*q;
         phi = (p-1) * (q-1);
-        if(phi <= e){
+        if(phi <= e)
+        {
             cout << "Those prime numbers are not big enough. \n";
-        }else{
+        }else
+        {
             cout << "Success! \n";
             break;
         }
