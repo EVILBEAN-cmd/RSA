@@ -7,12 +7,12 @@ using namespace std;
 
 bool isPrime(long long n)
 {
-    // Corner cases
-    if (n < 2){
+    // Corner cases and even numbers
+    if (n < 2 || n%2 == 0){
         return false;
     }
     // Check from 2 to n-1
-    for (int i = 2; i < sqrt(n); i++){
+    for (int i = 3; i < sqrt(n); i += 2){
         if (n % i == 0){
             return false;
         }
