@@ -59,9 +59,3 @@ n - second part of private and public key
 
 
 AUG 2021
-
-
-TODOS:
-- [ ] Makefile
-- [ ] Maybe add text for encryption/decryption not just numbers
-- [ ] split up code in different files
