@@ -200,7 +200,10 @@ void primeFactors(vector<unsigned long long>& factors, long long n)
     {
         factors.push_back(2);
         n = n/2;
-        cout << "2 and " << n << endl;
+        if(factors.size() == 2)
+        {
+            return;
+        }
 
     }
  
@@ -213,6 +216,10 @@ void primeFactors(vector<unsigned long long>& factors, long long n)
         {
             factors.push_back(i);
             n = n/i;
+        if(factors.size() == 2)
+        {
+            return;
+        }
         }
     }
     if (isPrime(n))
