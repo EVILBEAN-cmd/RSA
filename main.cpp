@@ -216,10 +216,10 @@ void primeFactors(vector<unsigned long long>& factors, long long n)
         {
             factors.push_back(i);
             n = n/i;
-        if(factors.size() == 2)
-        {
+            if(factors.size() == 2)
+            {
             return;
-        }
+            }
         }
     }
     if (isPrime(n))
