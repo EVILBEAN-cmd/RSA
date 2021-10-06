@@ -1,7 +1,6 @@
 # RSA-encryption-decryption
 
- This program can create simple key pairs (public and private), cipher and decipher numbers and find the private key with help of the public key. \
-
+This program can create simple key pairs (public and private), cipher and decipher numbers and find the private key with help of the public key. \
 All the functions (expecet main) are in the header.h file with comments. One command to run this code in the terminal is:
 
 "g++ main.cpp -include header.h -o main" and "./main" afterwards (both without quotation marks).
