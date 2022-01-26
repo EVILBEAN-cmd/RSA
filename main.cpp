@@ -7,16 +7,17 @@ using namespace std;
 
 bool isPrime(long long n)
 {
-    // Corner cases and even numbers
+    // Corner case 2
     if(n == 2)
     {
         return true;
     }
+    // Filter numbers
     else if (n < 2 || n%2 == 0)
     {
         return false;
     }
-    // Check from 2 to n-1
+    // Check from 2 to n-1, only odd numbers
     for (int i = 3; i < sqrt(n); i += 2)
     {
         if (n % i == 0)
